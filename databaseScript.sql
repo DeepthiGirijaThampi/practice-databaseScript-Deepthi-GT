@@ -16,7 +16,7 @@ phone_number INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 name VARCHAR(100) NOT NULL,
 email VARCHAR(100)
 );
---Table royalty
+-- Table royalty
 CREATE TABLE royalty(
 royalty_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 customer_id INT REFERENCES customer(phone_number),
@@ -46,4 +46,4 @@ unit VARCHAR(5)
 );
 
 ROLLBACK;
---COMMIT;
+-- COMMIT;
